@@ -1,0 +1,78 @@
+[gd_scene load_steps=4 format=3 uid="uid://dry18k8qilp16"]
+
+[ext_resource type="PackedScene" uid="uid://bg6b2bgla7xqk" path="res://Assets/Garbage Truck/garbage-truck.fbx" id="1_6tuvd"]
+[ext_resource type="PackedScene" uid="uid://cobj3rotfeyb4" path="res://Assets/Roads/road-straight.fbx" id="2_d2j62"]
+[ext_resource type="PackedScene" uid="uid://bi8fx4phulikl" path="res://Assets/Roads/road-curve.fbx" id="3_f0shi"]
+
+[node name="World" type="Node3D"]
+
+[node name="garbage-truck" parent="." instance=ExtResource("1_6tuvd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.04658, 0, -0.194702)
+
+[node name="Roads" type="Node" parent="."]
+
+[node name="road-straight" parent="Roads" instance=ExtResource("2_d2j62")]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, 0, 0, 5)
+
+[node name="road-straight2" parent="Roads" instance=ExtResource("2_d2j62")]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, 0, 0, 0)
+
+[node name="road-straight3" parent="Roads" instance=ExtResource("2_d2j62")]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, 0, 0, -5)
+
+[node name="road-straight4" parent="Roads" instance=ExtResource("2_d2j62")]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, 0, 0, 20)
+
+[node name="road-straight5" parent="Roads" instance=ExtResource("2_d2j62")]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, 0, 0, 15)
+
+[node name="road-straight6" parent="Roads" instance=ExtResource("2_d2j62")]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, 0, 0, 10)
+
+[node name="road-straight7" parent="Roads" instance=ExtResource("2_d2j62")]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -30, 0, 5)
+
+[node name="road-straight8" parent="Roads" instance=ExtResource("2_d2j62")]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -30, 0, 0)
+
+[node name="road-straight9" parent="Roads" instance=ExtResource("2_d2j62")]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -30, 0, -5)
+
+[node name="road-straight10" parent="Roads" instance=ExtResource("2_d2j62")]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -30, 0, 20)
+
+[node name="road-straight11" parent="Roads" instance=ExtResource("2_d2j62")]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -30, 0, 15)
+
+[node name="road-straight12" parent="Roads" instance=ExtResource("2_d2j62")]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -30, 0, 10)
+
+[node name="road-straight16" parent="Roads" instance=ExtResource("2_d2j62")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -20, 0, -15)
+
+[node name="road-straight17" parent="Roads" instance=ExtResource("2_d2j62")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -10, 0, -15)
+
+[node name="road-straight18" parent="Roads" instance=ExtResource("2_d2j62")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -15, 0, -15)
+
+[node name="road-curve" parent="Roads" instance=ExtResource("3_f0shi")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -2.5, 0, -12.5)
+
+[node name="road-curve2" parent="Roads" instance=ExtResource("3_f0shi")]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -27.5, 0, -12.5)
+
+[node name="road-straight19" parent="Roads" instance=ExtResource("2_d2j62")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -20, 0, 30)
+
+[node name="road-straight20" parent="Roads" instance=ExtResource("2_d2j62")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -10, 0, 30)
+
+[node name="road-straight21" parent="Roads" instance=ExtResource("2_d2j62")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -15, 0, 30)
+
+[node name="road-curve3" parent="Roads" instance=ExtResource("3_f0shi")]
+transform = Transform3D(5.96244e-08, 0, -5, 0, 5, 0, 5, 0, 5.96244e-08, -2.5, 0, 27.5)
+
+[node name="road-curve4" parent="Roads" instance=ExtResource("3_f0shi")]
+transform = Transform3D(-5, 0, -4.37114e-07, 0, 5, 0, 4.37114e-07, 0, -5, -27.5, 0, 27.5)
