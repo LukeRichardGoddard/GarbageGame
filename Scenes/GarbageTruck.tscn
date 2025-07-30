@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cf20bbpwgqx5e"]
+
+[ext_resource type="Script" path="res://Scripts/garbage_truck.gd" id="1_k55vl"]
+[ext_resource type="PackedScene" uid="uid://bg6b2bgla7xqk" path="res://Assets/Garbage Truck/garbage-truck.fbx" id="2_4lhr7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jclc4"]
+size = Vector3(1.276, 1.546, 3.373)
+
+[node name="GarbageTruck" type="CharacterBody3D"]
+collision_mask = 3
+script = ExtResource("1_k55vl")
+
+[node name="garbage-truck" parent="." instance=ExtResource("2_4lhr7")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.80677, 0)
+shape = SubResource("BoxShape3D_jclc4")

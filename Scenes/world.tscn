@@ -1,13 +1,19 @@
-[gd_scene load_steps=4 format=3 uid="uid://dry18k8qilp16"]
+[gd_scene load_steps=5 format=3 uid="uid://dry18k8qilp16"]
 
-[ext_resource type="PackedScene" uid="uid://bg6b2bgla7xqk" path="res://Assets/Garbage Truck/garbage-truck.fbx" id="1_6tuvd"]
+[ext_resource type="Script" path="res://Scripts/world.gd" id="1_codkv"]
 [ext_resource type="PackedScene" uid="uid://cobj3rotfeyb4" path="res://Assets/Roads/road-straight.fbx" id="2_d2j62"]
 [ext_resource type="PackedScene" uid="uid://bi8fx4phulikl" path="res://Assets/Roads/road-curve.fbx" id="3_f0shi"]
+[ext_resource type="PackedScene" uid="uid://cf20bbpwgqx5e" path="res://Scenes/GarbageTruck.tscn" id="4_45753"]
 
 [node name="World" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.689478, 0)
+script = ExtResource("1_codkv")
 
-[node name="garbage-truck" parent="." instance=ExtResource("1_6tuvd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.04658, 0, -0.194702)
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-4.37114e-08, -1, -4.37114e-08, 0, -4.37114e-08, 1, -1, 4.37114e-08, 1.91069e-15, -13.6662, 26.3737, 8.85386)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.49691, 0)
 
 [node name="Roads" type="Node" parent="."]
 
@@ -76,3 +82,7 @@ transform = Transform3D(5.96244e-08, 0, -5, 0, 5, 0, 5, 0, 5.96244e-08, -2.5, 0,
 
 [node name="road-curve4" parent="Roads" instance=ExtResource("3_f0shi")]
 transform = Transform3D(-5, 0, -4.37114e-07, 0, 5, 0, 4.37114e-07, 0, -5, -27.5, 0, 27.5)
+
+[node name="GarbageTruck" parent="." instance=ExtResource("4_45753")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.26955, -0.625166, 0.52636)
+collision_mask = 3
