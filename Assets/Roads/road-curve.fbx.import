@@ -36,7 +36,8 @@ _subresources={
 "PATH:road-curve": {
 "generate/navmesh": 1,
 "generate/physics": true,
-"physics/shape_type": 1
+"physics/shape_type": 3,
+"primitive/size": Vector3(2, 0.04, 2)
 }
 }
 }

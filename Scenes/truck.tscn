@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://crqsikv36qij2"]
+
+[ext_resource type="PackedScene" uid="uid://bg6b2bgla7xqk" path="res://Assets/Garbage Truck/garbage-truck.fbx" id="1_5kr5k"]
+[ext_resource type="Script" path="res://Scenes/truck.gd" id="2_0veus"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6luhq"]
+size = Vector3(1.6, 1.38, 3.353)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_hx8ba"]
+height = 1.205
+radius = 0.305
+
+[node name="garbage-truck" instance=ExtResource("1_5kr5k")]
+script = ExtResource("2_0veus")
+
+[node name="CollisionBody" type="CollisionShape3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.911835, 0.0765258)
+shape = SubResource("BoxShape3D_6luhq")
+
+[node name="CollisionWheelsFront" type="CollisionShape3D" parent="." index="2"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -9.71242e-08, 0.303945, 1.11097)
+shape = SubResource("CylinderShape3D_hx8ba")
+
+[node name="CollisionWheelsRear" type="CollisionShape3D" parent="." index="3"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 4.46887e-08, 0.303945, -0.511179)
+shape = SubResource("CylinderShape3D_hx8ba")

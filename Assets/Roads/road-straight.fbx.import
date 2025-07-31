@@ -35,7 +35,10 @@ _subresources={
 "nodes": {
 "PATH:road-straight": {
 "generate/navmesh": 1,
-"generate/physics": true
+"generate/physics": true,
+"physics/physics_material_override": null,
+"physics/shape_type": 3,
+"primitive/size": Vector3(1, 0.04, 1)
 }
 }
 }
